@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 const Card = ( {title}) => {
   return (
     <div className='card'>
@@ -8,6 +8,7 @@ const Card = ( {title}) => {
   )
 }
 const App = () => {
+  const [hasLiked, setHasLiked] = useState(false);
   return (
     <div className='card-container'>
       < Card title="Star Wars" />
